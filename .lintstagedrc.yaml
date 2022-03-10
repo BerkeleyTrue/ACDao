@@ -1,5 +1,5 @@
 ---
-'{src}/**/*.tsx\':
+'src/**/*.tsx\':
   - eslint --fix --quiet
   - prettier --write
 
