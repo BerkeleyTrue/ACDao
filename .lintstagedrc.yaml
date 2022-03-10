@@ -1,0 +1,7 @@
+---
+'{src}/**/*.tsx\':
+  - eslint --fix --quiet
+  - prettier --write
+
+'**/*.yml':
+  - prettier --write
