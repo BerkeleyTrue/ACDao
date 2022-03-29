@@ -2,16 +2,21 @@ import { Flex, Heading } from '@chakra-ui/react';
 
 export const Hero = ({ title }: { title: string }) => (
   <Flex
-    justifyContent="center"
+    flexBasis="auto"
+    justifyContent="flex-end"
     alignItems="center"
-    height="100vh"
+    flexFlow="column"
+    height="50%"
+    width="100%"
+    flexShrink="0"
     bgGradient="linear(to-l, #7928CA, #FF0080)"
     bgClip="text"
+    px="16"
   >
-    <Heading fontSize="6vw">{title}</Heading>
+    <Heading fontSize={{ base: '4xl', md: '5xl' }}>{title}</Heading>
   </Flex>
 );
 
 Hero.defaultProps = {
-  title: 'with-chakra-ui-typescript',
+  title: 'ACDao: Create Pacts, fund each other',
 };
